@@ -5,4 +5,4 @@ The dispute data from the precedence campaign of the official Aragon Court at
 
 ## Arbitrable
 
-The Arbitrable creating all disputes is deployed at [`0xfdb5f665c12569d34066862808eb6bd4b4c58158`](https://etherscan.io/address/0xfdb5f665c12569d34066862808eb6bd4b4c58158) (see repo: [`precedence-campaign-arbitrable`](https://github.com/aragonone/precedence-campaign-arbitrable)).
+The Arbitrable creating all disputes is deployed at [`0x7d137a26a6081eac7d141a3918285ac5f917860e`](https://etherscan.io/address/0x7d137a26a6081eac7d141a3918285ac5f917860e) (see repo: [`precedence-campaign-arbitrable`](https://github.com/aragonone/precedence-campaign-arbitrable)).
