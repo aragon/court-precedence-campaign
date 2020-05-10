@@ -1,0 +1,11 @@
+{
+  "description": "App Mining Registry Agreement",
+  "disputedActionText": "Address Book: Add Entry",
+  "disputedActionURL": "https://mainnet.aragon.org/#/0xFB75846E3cC2b93162eD1c1e3C48883E8b106AF9/0x6bc4d220305594a0c54690bee086c6922ba5c972/delay/16/"",
+  "disputedActionRadspec":"Address Book: Add 0xE73671913A7860c0FbDc3987871C1EfF732916bf to the registry with metadata QmdaBhUsvrSqqQQNPu5NbRsVDewqeirpTZNWwMqp9kybVA",
+  "agreementTitle": "App Mining Registry Agreement",
+  "agreementText": "./App_Mining_Registry_Agreement.pdf",
+  "organization": "0xFB75846E3cC2b93162eD1c1e3C48883E8b106AF9",
+  "plaintiff": "0xA1d4C9e0a46068AfA3D8424B0618218Bf85ccaAA",
+  "defendant": "0xe04cabcb24e11620dd62bb99c396e76ceb578914"
+}
