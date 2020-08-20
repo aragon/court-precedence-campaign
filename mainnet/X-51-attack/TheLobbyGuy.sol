@@ -99,8 +99,7 @@ contract TheLobbyGuy {
         MiniMeToken votingToken = voting.token();
         uint256 voterStake = votingToken.balanceOfAt(msg.sender, snapshotBlock);
 
-        uint256 balance = _token.balanceOf(address(this));
-        uint256 share = voterStake.mul(balance).div(yeas);
+        uint256 share = voterStake.mul(currentBalance).div(yeas);
         require(_token.transfer(msg.sender, share), ERROR_TOKEN_TRANSFER_FAILED);
 
         hasClaimed[msg.sender] = true;
