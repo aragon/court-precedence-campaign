@@ -58,6 +58,7 @@ contract TheLobbyGuy {
     string private constant ERROR_TOKEN_TRANSFER_FAILED = "TLG_TOKEN_TRANSFER_FAILED";
     string private constant ERROR_NO_BALANCE_TO_DISTRIBUTE = "TLG_NO_BALANCE_TO_DISTRIBUTE";
     string private constant ERROR_VOTER_HAS_ALREADY_CLAIMED = "TLG_VOTER_HAS_ALREADY_CLAIMED";
+    string private constant ERROR_CONTRACT_ALREADY_INITIALIZED = "TLG_CONTRACT_ALREADY_INITIALIZED";
 
     address public owner;
     uint256 public withdrawsEndDate;
@@ -69,10 +70,16 @@ contract TheLobbyGuy {
     event ShareClaimed(address indexed sender, ERC20 token, uint256 amount);
     event FundsRecovered(address indexed sender, ERC20 token, uint256 amount);
 
-    constructor(Voting _voting, uint256 _voteId) public {
+    constructor() public {
+        owner = msg.sender;
+    }
+
+    function initialize(Voting _voting, uint256 _voteId) external {
+        require(msg.sender == owner, ERROR_SENDER_NOT_OWNER);
+        require(voting == Voting(0), ERROR_CONTRACT_ALREADY_INITIALIZED);
+
         voting = _voting;
         voteId = _voteId;
-        owner = msg.sender;
     }
 
     function recover(ERC20 _token) external {
