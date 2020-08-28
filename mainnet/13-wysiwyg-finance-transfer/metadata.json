@@ -1,0 +1,12 @@
+{
+  "voting": "0x0e835020497b2cd716369f8fc713fb7bd0a22dbf",
+  "submitterJustification": "If approved, this proposal will transfer 1 ETH to the Aragon Association multisig address 0xcafe1a77e84698c83ca8931f54a755176ef75f2c",
+  "challengerJustification": "./evidence/against.md",
+  "script": {
+    "finance": "0xa6604432fecc1875f8c35cc291aa52fc0cc52041",
+    "token": "0x0000000000000000000000000000000000000000",
+    "receiver": "0x1111111111111111111111111111111111111111",
+    "amount": "1000000000000000000",
+    "reference": ""
+  }
+}
