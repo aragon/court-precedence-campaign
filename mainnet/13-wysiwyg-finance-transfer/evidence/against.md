@@ -13,3 +13,4 @@ Given guideline 3.2 of the Aragon Network Cash Agreement:
 - Proposals MUST be accompanied by an accurate American English-language Justification of the proposal.
 
 This proposal should be ruled "BLOCK" by Aragon Court.
+
