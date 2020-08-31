@@ -19,10 +19,10 @@ function encodeCallsScript(actions) {
   }, CALLSCRIPT_ID)
 }
 
-function encodeSetEnsOwnerThroughAgent(ensContract, ensDomain, targetAgent) {
+function encodeSetEnsOwnerThroughAgent(ensContract, ensDomain, newOwner) {
   const ensABI = getFunctionABI(ENS_ABI, 'setOwner')
   const ancashNamehash = namehash.hash(ensDomain)
-  const setOwnerAction = abi.encodeFunctionCall(ensABI, [ancashNamehash, targetAgent])
+  const setOwnerAction = abi.encodeFunctionCall(ensABI, [ancashNamehash, newOwner])
   const agentABI = getFunctionABI(AGENT_ABI, 'execute')
   return abi.encodeFunctionCall(agentABI, [ensContract, EMPTY_HEX, setOwnerAction])
 }

@@ -4,7 +4,7 @@ The proposal Justification says:
 
 However the Aragon Network Cash dashboard shows shows:
 
-> Execute 'Set 0x87F4Dc77707CdbEDd0069C3CFC1b96f1725f03E0 as the new owner of the 0xb237995b885a9481dbf396f13a029055e9f38fb8aaf2527a55062c02c800e93f node' on 0x98Df287B6C145399Aaa709692c8D308357bC085D.
+> Execute 'Set 0xcafe1a77e84698c83ca8931f54a755176ef75f2c as the new owner of the 0xf53beeaf48eab5b3405783e3c4716a3849a670d8c178947abb5741a828cf079d node' on 0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e.
 
 Given guideline 3.2 of the Aragon Network Cash Agreement:
 
