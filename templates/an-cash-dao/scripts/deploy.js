@@ -4,7 +4,7 @@ const { pct16, bn, getEventArgument, ONE_DAY } = require('@aragon/contract-helpe
 const DEFAULTS = {
   agreement: {
     title:        'Aragon Network Cash Agreement',
-    content:      utf8ToHex('ipfs:QmPvfWUNt3WrZ7uaB1ZwEmec3Zr1ABL9CncSDfQypWkmnp'),
+    content:      utf8ToHex('ipfs:QmZ2LoN4L6cc1Jrvo5uiDC4q98dXxpn1XP3mNCdEeTrEw1'),
   },
   disputableVoting: {
     duration:               ONE_DAY * 5,
