@@ -10,12 +10,13 @@
     web3-eth-abi "1.2.5"
     web3-utils "1.2.5"
 
-"@aragonone/ipfs-pinner-client@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@aragonone/ipfs-pinner-client/-/ipfs-pinner-client-0.0.1.tgz#350e5627f1d4a2f603096da7a619fedf627c3153"
-  integrity sha512-mPisZXsf7l9dywuK+YuJm5UhKlgMTp1Cx8Gtt+wiqhcLppsMp3b8G9PeZy4pRzXJV0TV88fvsAJMuP5hNfGT1g==
+"@aragonone/ipfs-pinner-client@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@aragonone/ipfs-pinner-client/-/ipfs-pinner-client-0.0.2.tgz#922d89c95a142aa0c0e1096ae57e8798ce76df86"
+  integrity sha512-x8fm84xrLopo0j13RsqAIUGw/0MaDJaTPhxSrIHixnyWbulL2bYxdaFdUnbB7BYLo649RY3ATHBw/8utn0W35w==
   dependencies:
     superagent "^6.0.0"
+    url-join "^4.0.1"
 
 "@ethersproject/abi@5.0.0-beta.153":
   version "5.0.0-beta.153"
@@ -1541,7 +1542,7 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-eth-ens-namehash@2.0.8, eth-ens-namehash@^2.0.0:
+eth-ens-namehash@2.0.8, eth-ens-namehash@^2.0.0, eth-ens-namehash@^2.0.8:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/eth-ens-namehash/-/eth-ens-namehash-2.0.8.tgz#229ac46eca86d52e0c991e7cb2aef83ff0f68bcf"
   integrity sha1-IprEbsqG1S4MmR58sq74P/D2i88=
@@ -3797,7 +3798,7 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rlp@^2.0.0, rlp@^2.2.1, rlp@^2.2.2, rlp@^2.2.3, rlp@^2.2.4:
+rlp@^2.0.0, rlp@^2.2.1, rlp@^2.2.2, rlp@^2.2.3, rlp@^2.2.4, rlp@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/rlp/-/rlp-2.2.6.tgz#c80ba6266ac7a483ef1e69e8e2f056656de2fb2c"
   integrity sha512-HAfAmL6SDYNWPUOJNrM500x4Thn4PZsEy5pijPh40U9WfNk0z15hUYzO9xVIMAdIHdFtD8CBDHd75Td1g36Mjg==
@@ -4409,6 +4410,11 @@ uri-js@^4.2.2:
   integrity sha512-KY9Frmirql91X2Qgjry0Wd4Y+YTdrdZheS8TFwvkbLWf/G5KNJDCh6pKL5OZctEW4+0Baa5idK2ZQuELRwPznQ==
   dependencies:
     punycode "^2.1.0"
+
+url-join@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/url-join/-/url-join-4.0.1.tgz#b642e21a2646808ffa178c4c5fda39844e12cde7"
+  integrity sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA==
 
 url-parse-lax@^1.0.0:
   version "1.0.0"

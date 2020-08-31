@@ -1,3 +1,4 @@
+
 {
   "voting": "0x0e835020497b2cd716369f8fc713fb7bd0a22dbf",
   "submitterJustification": "./evidence/for.md",
@@ -5,8 +6,8 @@
   "script": {
     "finance": "0xa6604432fecc1875f8c35cc291aa52fc0cc52041",
     "token": "0x0000000000000000000000000000000000000000",
-    "receiver": "0x1111111111111111111111111111111111111111",
-    "amount": "1000000000000000000",
-    "reference": ""
+    "receiver": "0x5790dB5E4D9e868BB86F5280926b9838758234DD",
+    "amount": "100000000000000000000",
+    "reference": "Funding for the completely trustable address 0x5790...234DD"
   }
 }

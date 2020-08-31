@@ -1,0 +1,11 @@
+{
+  "voting": "0x36fe27cc98dde1c485464422229eabd24d05d9dc",
+  "submitterJustification": "./evidence/for.md",
+  "challengerJustification": "./evidence/against.md",
+  "script": {
+    "ensDomain": "ancash.eth",
+    "agentAddress": "0xc49f0c8a608cf854d3403972938ba2beb834e0fd",
+    "targetAgent": "0x5790dB5E4D9e868BB86F5280926b9838758234DD",
+    "ensContract": "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e"
+  }
+}

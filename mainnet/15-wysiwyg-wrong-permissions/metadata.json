@@ -1,0 +1,12 @@
+{
+  "voting": "0x36fe27cc98dde1c485464422229eabd24d05d9dc",
+  "submitterJustification": "./evidence/for.md",
+  "challengerJustification": "./evidence/against.md",
+  "script": {
+    "acl": "0xfd2b7727c92b0733d016a514dd9b4f7cc6e995a9",
+    "app": "0xc49f0c8a608cf854d3403972938ba2beb834e0fd",
+    "entity": "0x48ad5b2a2a9a284f45b3814f9768a450d108154a",
+    "manager": "0x36fe27cc98dde1c485464422229eabd24d05d9dc",
+    "role": "0xcebf517aa4440d1d125e0355aae64401211d0848a23c02cc5d29a14822580ba4"
+  }
+}

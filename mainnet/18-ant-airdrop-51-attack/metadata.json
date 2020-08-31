@@ -1,5 +1,14 @@
 {
+  "voting": "0x0e835020497b2cd716369f8fc713fb7bd0a22dbf",
+  "submitterJustification": "./evidence/for.md",
+  "challengerJustification": "./evidence/against.md",
   "script": {
-    "51AttackContract": "0x8d720E8ce4cE1a25d61a320aF033D2CD1c859D04"
+    "51AttackContract": "0x8d720E8ce4cE1a25d61a320aF033D2CD1c859D04",
+    "finance": "0xa6604432fecc1875f8c35cc291aa52fc0cc52041",
+    "token": "0x0000000000000000000000000000000000000000",
+    "receiver": "0xA1d4C9e0a46068AfA3D8424B0618218Bf85ccaAA",
+    "amount": "1000000000000000000",
+    "reference": "Funds for reimplementation of the Client in Shadowlands",
+    "vaultAddress": "0x87f4dc77707cdbedd0069c3cfc1b96f1725f03e0"
   }
 }
