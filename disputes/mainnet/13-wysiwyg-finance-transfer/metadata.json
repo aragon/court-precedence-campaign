@@ -1,12 +1,12 @@
 {
-  "voting": "0xa22ce823a0c0415f35ed95751c4aec14828b6414",
+  "voting": "0xa71e8defdab5bd14279df11303f7535b2c6a4d00",
   "submitterJustification": "./evidence/for.md",
   "challengerJustification": "./evidence/against.md",
   "script": {
-    "finance": "0xc996d044f81b65ddd294b6ba1356bdf8c00b9113",
-    "token": "0x0000000000000000000000000000000000000000",
+    "finance": "0x177e7619e3f1bdc7bde069d4ec47c7a579b4a153",
+    "token": "0x6b175474e89094c44da98b954eedeac495271d0f",
     "receiver": "0x1111111111111111111111111111111111111111",
-    "amount": "1000000000000000000",
+    "amount": "100000000000000000000",
     "reference": ""
   }
 }
