@@ -5,8 +5,6 @@
 
 Aragon Network Cash is a sub-organization of the Aragon Network, governed as the Aragon Network is by Aragon Network Token (ANT) holders. Aragon Network Cash is set up to allow for relatively easy access to funding for low-cost community projects. Aragon Network Cash is best thought of as the “petty cash” account of the Aragon Network.
 
-Any ANT holder may attempt to make changes to Aragon Network Cash as a direct action, without having to go through a vote. The enactment of the action will be delayed, and during this delay any other ANT holder will have the opportunity to review the action to ensure it is consistent with this Agreement. If the action is consistent with this Agreement, then it will proceed to be enacted.
-
 This Agreement exists to enumerate the shared mission, values, and constraints that bind ANT holders in their collaborative effort to create value for each other using the Aragon Network Cash organization.
 
 
@@ -23,12 +21,13 @@ These guidelines apply to all proposals submitted to the Aragon Network organiza
 
 
 
-1. Proposals MUST be governed by this Agreement, or a future version of this Agreement as modified within the bounds of the Agreement. This guideline cannot be changed. \
+1. Proposals MUST be governed by this Agreement, or a future version of this Agreement as amended within the bounds of the Agreement.
 
-2. Disputes over a proposal relying on this Agreement MUST be resolved by Aragon Court. This guideline cannot be changed.
-3. Proposals MUST NOT disproportionately benefit a majority of ANT holders voting on a proposal over the minority. This guideline cannot be changed. \
+2. Disputes over a proposal relying on this Agreement MUST be resolved by Aragon Court.
 
-4. Proposals MUST NOT attempt to cast a vote using ANT held in the address of any versions of the Agent app installed on the Aragon Network Cash organization, or using ANT held in any Aragon Network Cash contract that fulfills similar functionality as the Agent app. This guideline cannot be changed. \
+3. Proposals MUST NOT disproportionately benefit a majority of ANT holders voting on a proposal over the minority.
+
+4. Proposals MUST NOT attempt to cast a vote using ANT held in the address of any versions of the Agent app installed on the Aragon Network Cash organization, or using ANT held in any Aragon Network Cash contract that fulfills similar functionality as the Agent app.
 
 5. Proposals MUST NOT activate in Aragon Court any ANJ controlled by the Aragon Network Cash organization.
 
@@ -41,7 +40,7 @@ These guidelines apply to all proposals put forth to the Aragon Network organiza
 
 
 
-1. Proposals MUST be consistent with the Aragon Manifesto. \
+1. Proposals MUST be consistent with the Aragon Manifesto.
 
 2. Proposals MUST be accompanied by an accurate American English-language Justification of the proposal. Typos in the Justification SHALL be allowed if they do not substantially alter the meaning of the proposal. This Justification MUST be referred to in the on-chain source code or transaction data of the proposal by the content-addressed location of the Justification on the public IPFS network, and the Justification MUST be accessible via the public IPFS network for as long as the proposal is open for voting and/or in effect. If a Justification becomes temporarily inaccessible via the public IPFS network, and its proposal is challenged under this guideline, then jurors SHOULD block the proposal if they have reason to believe the Justification was inaccessible at the time that the proposal was challenged. Alternatively, the Justification MAY be encoded directly into the on-chain source code or transaction data of the proposal so that the Justification remains human-readable and accessible as long as the Ethereum blockchain itself remains publicly available. The Justification MUST include the following information:
     1. The name(s) and/or username(s) of the author(s) of the proposal. The author(s) SHOULD be the primary point of contact for any questions or comments regarding the proposal.

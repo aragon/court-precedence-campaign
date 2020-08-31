@@ -38,17 +38,18 @@ const CONFIG = {
     stakingFactory: '0x07429001eeA415E967C57B8d43484233d57F8b0B',   // Real StakingFactory instance on Rinkeby
     feeToken:       '0x3af6b2f907f0c55f279e0ed65751984e6cdc4a42',   // DAI mock token used in Aragon Court staging
     token:          '0x245B220211b7D3C6dCB001Aa2C3bf48ac4CaA03E',   // ANT mock token used in Aragon Court staging
-    template:       '0x13347ed7970A8320fa8209ABD81560949d20b11c...'
+    template:       '0x13347ed7970A8320fa8209ABD81560949d20b11c'
   },
   mainnet: {
     ...DEFAULTS,
     ens:            '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e',
-    daoFactory:     '',
-    miniMeFactory:  '',
+    daoFactory:     '0x7378ad1ba8f3c8e64bbb2a04473edd35846360f1',
+    miniMeFactory:  '0x909d05f384d0663ed4be59863815ab43b4f347ec',
     arbitrator:     '0xee4650cBe7a2B23701D416f58b41D8B76b617797',   // Aragon Court mainnet instance
-    stakingFactory: '',
+    stakingFactory: '0xD2f7D8A940324F12DFe623D5529b077E353314d3',
     token:          '0x960b236A07cf122663c4303350609A66A7B288C0',   // ANT
     feeToken:       '0x6b175474e89094c44da98b954eedeac495271d0f',   // DAI v2
+    template:       '0x27D354A866c96306c931733E9506A1e941E98bdd'
   }
 }
 
