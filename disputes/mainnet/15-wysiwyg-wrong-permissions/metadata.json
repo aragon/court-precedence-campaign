@@ -1,12 +1,11 @@
 {
-  "voting": "0xa22ce823a0c0415f35ed95751c4aec14828b6414",
+  "voting": "0xa71e8defdab5bd14279df11303f7535b2c6a4d00",
   "submitterJustification": "./evidence/for.md",
   "challengerJustification": "./evidence/against.md",
   "script": {
-    "acl": "0x6a353a8e8200e95afbb95359b2d9705663a4bde2",
-    "app": "0xb04d15863369a6be926a1f833eff9836f6f91ee5",
-    "entity": "0x9958466922867D4fc0Da7451c9E717e4ff92D6fE",
-    "manager": "0xa22ce823a0c0415f35ed95751c4aec14828b6414",
+    "acl": "0xb988c959c16e270e2ed868e4f32528bfc05a2067",
+    "app": "0x6afa5f5920fcc8d041b515253c2dc42ba4e5e588",
+    "entity": "0xc9ce7d0fc3142c1cf0871ee049836957081a15f8",
     "role": "0xcebf517aa4440d1d125e0355aae64401211d0848a23c02cc5d29a14822580ba4"
   }
 }

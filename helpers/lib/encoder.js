@@ -42,9 +42,9 @@ function encodeNewImmediatePayment(token, receiver, amount, reference) {
   return abi.encodeFunctionCall(newImmediatePaymentABI, [token, receiver, amount, reference])
 }
 
-function encodeCreatePermission(entity, app, role, manager) {
-  const aclAbi = getFunctionABI(ACL_ABI, 'createPermission')
-  return abi.encodeFunctionCall(aclAbi, [entity, app, role, manager])
+function encodeGrantPermission(entity, app, role) {
+  const aclAbi = getFunctionABI(ACL_ABI, 'grantPermission')
+  return abi.encodeFunctionCall(aclAbi, [entity, app, role])
 }
 
 function encodeForward(script) {
@@ -59,9 +59,9 @@ function getFunctionABI(ABI, functionName) {
 }
 
 module.exports = {
-  encodeCallsScript,
-  encodeCreatePermission,
   encodeForward,
+  encodeCallsScript,
+  encodeGrantPermission,
   encodeNewRewardsAppInstance,
   encodeNewImmediatePayment,
   encodeSetEnsOwnerThroughAgent,

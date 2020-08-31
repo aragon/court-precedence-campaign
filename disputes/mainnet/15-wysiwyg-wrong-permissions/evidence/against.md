@@ -4,9 +4,9 @@ The proposal Justification says:
 
 However the blockchain data shows:
 
-> ACL: Create a new permission granting `0x9958466922867D4fc0Da7451c9E717e4ff92D6fE` the ability to perform actions of role "Execute actions" on "Agent" (setting "Voting" as the permission manager)
+> ACL: Grants `0xc9ce7d0fc3142c1cf0871ee049836957081a15f8` the ability to perform actions of role "Execute actions" on "Agent"
 
-`0x9958466922867D4fc0Da7451c9E717e4ff92D6fE` is NOT the address of the Tokens app. It is the address of the token contract that is controlled by the Tokens app.
+`0xc9ce7d0fc3142c1cf0871ee049836957081a15f8` is NOT the address of the Tokens app. It is the address of the token contract that is controlled by the Tokens app.
 
 Given guideline 3.2 of the Aragon Network Cash Agreement:
 
