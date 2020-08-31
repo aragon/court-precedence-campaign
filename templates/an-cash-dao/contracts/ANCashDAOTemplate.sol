@@ -25,7 +25,6 @@ contract ANCashDAOTemplate is BaseTemplate, TokenCache {
 
     struct Cache {
         address dao;
-        address token;
         address tokenManager;
         address agreement;
     }
