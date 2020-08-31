@@ -1,21 +1,21 @@
 {
-  "name": "@aragon/court-precedence-campaign",
+  "name": "@aragon/court-precedence-campaign-an-cash-dao-template",
+  "description": "AN cash DAO template for Aragon Court Precedence Campaign",
   "private": true,
   "version": "0.0.1",
   "author": "Aragon Association <legal@aragon.org>",
-  "license": "(CC0 1.0 Universal OR MIT)",
+  "license": "MIT",
   "scripts": {
     "console": "buidler console",
-    "create-disputed-vote:rinkeby": "buidler create-disputed-vote --network rinkeby",
-    "create-disputed-vote:mainnet": "buidler create-disputed-vote --network mainnet"
+    "compile": "buidler compile --force",
+    "deploy": "buidler deploy"
   },
   "dependencies": {
     "@aragon/contract-helpers-test": "^0.1.0",
     "@nomiclabs/buidler": "^1.4.3",
+    "@nomiclabs/buidler-ganache": "^1.3.3",
     "@nomiclabs/buidler-truffle5": "^1.3.4",
     "@nomiclabs/buidler-web3": "^1.3.4",
-    "web3-eth-abi": "^1.2.1",
-    "web3": "^1.2.11",
-    "web3-utils": "^1.2.11"
+    "web3": "^1.2.11"
   }
 }
