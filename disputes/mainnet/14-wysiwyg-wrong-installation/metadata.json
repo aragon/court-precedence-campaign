@@ -4,7 +4,6 @@
   "challengerJustification": "./evidence/against.md",
   "script": {
     "acl": "0xfd2b7727c92b0733d016a514dd9b4f7cc6e995a9",
-    "appIndex": 9,
     "kernel": "0xf327c5232d8d9192f2b56d99e31024d658943717",
     "vaultAddress": "0xc49f0c8a608cf854d3403972938ba2beb834e0fd",
     "appId": "0x3ca69801a60916e9222ceb2fa3089b3f66b4e1b3fc49f4a562043d9ec1e5a00b",
