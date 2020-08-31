@@ -1,23 +1,6 @@
-const {
-  script: {
-    acl,
-    kernel,
-    vaultAddress,
-    appId,
-    appBase,
-    entity,
-    role,
-    manager,
-  },
-} = require('./metadata')
-const {
-  encodeNewRewardsAppInstance,
-  encodeCallsScript,
-} = require('../../lib/encoder')
-const {
-  buildNonceForAddress,
-  calculateNewProxyAddress,
-} = require('../../lib/web3-utils')
+const { script: { acl, kernel, vaultAddress, appId, appBase, entity, role, manager } } = require('./metadata')
+const { encodeNewRewardsAppInstance, encodeCallsScript } = require('../../../helpers/lib/encoder')
+const { buildNonceForAddress, calculateNewProxyAddress } = require('../../../helpers/lib/web3-utils')
 
 module.exports = async () => {
   const nonce = await buildNonceForAddress(kernel, 0)

@@ -1,10 +1,5 @@
-const {
-  script: { agentAddress, ensContract, ensDomain, targetAgent },
-} = require('./metadata')
-const {
-  encodeSetEnsOwnerThroughAgent,
-  encodeCallsScript,
-} = require('../../lib/encoder')
+const { script: { agentAddress, ensContract, ensDomain, targetAgent } } = require('./metadata')
+const { encodeSetEnsOwnerThroughAgent, encodeCallsScript } = require('../../../helpers/lib/encoder')
 
 module.exports = async () => {
   const data = encodeSetEnsOwnerThroughAgent(

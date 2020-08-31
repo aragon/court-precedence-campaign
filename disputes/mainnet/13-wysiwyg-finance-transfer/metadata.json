@@ -1,9 +1,9 @@
 {
-  "voting": "0x0e835020497b2cd716369f8fc713fb7bd0a22dbf",
+  "voting": "0xa22ce823a0c0415f35ed95751c4aec14828b6414",
   "submitterJustification": "./evidence/for.md",
   "challengerJustification": "./evidence/against.md",
   "script": {
-    "finance": "0xa6604432fecc1875f8c35cc291aa52fc0cc52041",
+    "finance": "0xc996d044f81b65ddd294b6ba1356bdf8c00b9113",
     "token": "0x0000000000000000000000000000000000000000",
     "receiver": "0x1111111111111111111111111111111111111111",
     "amount": "1000000000000000000",

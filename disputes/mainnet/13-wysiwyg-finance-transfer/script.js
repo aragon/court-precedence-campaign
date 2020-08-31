@@ -1,5 +1,5 @@
 const { script: { finance, token, receiver, amount, reference } } = require('./metadata')
-const { encodeNewImmediatePayment, encodeCallsScript } = require('../../lib/encoder')
+const { encodeNewImmediatePayment, encodeCallsScript } = require('../../../helpers/lib/encoder')
 
 module.exports = async () => {
   const data = encodeNewImmediatePayment(token, receiver, amount, reference)
