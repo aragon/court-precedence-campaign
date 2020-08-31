@@ -147,7 +147,7 @@
     "@ethersproject/rlp" "^5.0.3"
     "@ethersproject/signing-key" "^5.0.4"
 
-"@nomiclabs/buidler-etherscan@^2":
+"@nomiclabs/buidler-etherscan@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@nomiclabs/buidler-etherscan/-/buidler-etherscan-2.0.0.tgz#2cf08dd3668079efa28e32e505a34f48dbf171e4"
   integrity sha512-gyIRWhoR5hcYKVnQwKPMlCjvBF/5rcYABpZ0CWfZb8nVSakQYLZy8ETrlUHuacuX/2HkOJ2r2h2A3MZV1eJJIw==
