@@ -1,3 +1,7 @@
+/*
+ * SPDX-License-Identifier:    MIT
+ */
+
 pragma solidity ^0.7.0;
 
 
@@ -70,7 +74,7 @@ contract TheLobbyGuy {
     event ShareClaimed(address indexed sender, ERC20 token, uint256 amount);
     event FundsRecovered(address indexed sender, ERC20 token, uint256 amount);
 
-    constructor() public {
+    constructor() {
         owner = msg.sender;
     }
 

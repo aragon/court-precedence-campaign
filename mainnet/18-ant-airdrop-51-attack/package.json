@@ -8,9 +8,10 @@
     "console": "buidler console",
     "compile": "buidler compile --force"
   },
-  "dependencies": {
+  "devDependencies": {
     "@aragon/contract-helpers-test": "^0.1.0",
     "@nomiclabs/buidler": "^1.4.3",
+    "@nomiclabs/buidler-etherscan": "^2.0.0",
     "@nomiclabs/buidler-ganache": "^1.3.3",
     "@nomiclabs/buidler-truffle5": "^1.3.4",
     "@nomiclabs/buidler-web3": "^1.3.4",
