@@ -23,6 +23,9 @@ const DEFAULTS = {
     actionCollateral:       bn(0),
     challengeCollateral:    bn(0),
     challengeDuration:      ONE_DAY * 3,
+    token:                  '0x960b236A07cf122663c4303350609A66A7B288C0',  // ANT token
+    submitter:              '0x0090aED150056316E37FE6DFa10Dc63E79D173B6',  // Facu's address
+    challenger:             '0xd5931f0a36FE76845a5330f6D0cd7a378401e34d',  // Aragon Court deployer
   },
 }
 
@@ -42,7 +45,7 @@ const CONFIG = {
     ens:            '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e',
     daoFactory:     '',
     miniMeFactory:  '',
-    arbitrator:     '0xee4650cBe7a2B23701D416f58b41D8B76b617797',   // Aragon Court
+    arbitrator:     '0xee4650cBe7a2B23701D416f58b41D8B76b617797',   // Aragon Court mainnet instance
     stakingFactory: '',
     feeToken:       '0x6b175474e89094c44da98b954eedeac495271d0f',   // DAI v2
   }
@@ -70,10 +73,12 @@ module.exports = async function deploy(network) {
   await template.installAgreement(title, content, arbitrator, stakingFactory)
 
   console.log('Installing apps...')
-  const { disputableVoting: { duration, support, minQuorum, delegatedVotingPeriod, quietEndingPeriod, quietEndingExtension, executionDelay } } = config
+  const { disputableVoting: { submitter, challenger, token, duration, support, minQuorum, delegatedVotingPeriod, quietEndingPeriod, quietEndingExtension, executionDelay } } = config
   const { feeToken, disputableVoting: { actionCollateral, challengeCollateral, challengeDuration } } = config
   await template.installApps(
-    holders[0],
+    submitter,
+    challenger,
+    token,
     [duration, support, minQuorum, delegatedVotingPeriod, quietEndingPeriod, quietEndingExtension, executionDelay],
     [feeToken, challengeDuration, actionCollateral, challengeCollateral],
   )

@@ -31,8 +31,6 @@ import "./lib/id/IFIFSResolvingRegistrar.sol";
 contract BaseTemplate is IsContract {
     using Uint256Helpers for uint256;
 
-    address constant private ANY_ENTITY = address(-1);
-
     // App IDs for [app].aragonpm.eth:
     bytes32 constant internal AGENT_APP_ID = 0x9ac98dc5f995bf0211ed589ef022719d1487e5cb2bab505676f0d084c07cf89a;
     bytes32 constant internal FINANCE_APP_ID = 0xbf8491150dafc5dcaee5b861414dca922de09ccffa344964ae167212e8c673ae;
@@ -183,8 +181,6 @@ contract BaseTemplate is IsContract {
     )
         internal
     {
-        _acl.createPermission(ANY_ENTITY, _voting, _voting.CHALLENGE_ROLE(), _manager);
-
         _acl.createPermission(_grantee, _voting, _voting.CHANGE_VOTE_TIME_ROLE(), _manager);
         _acl.createPermission(_grantee, _voting, _voting.CHANGE_SUPPORT_ROLE(), _manager);
         _acl.createPermission(_grantee, _voting, _voting.CHANGE_QUORUM_ROLE(), _manager);

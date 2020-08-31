@@ -43,7 +43,7 @@ contract ANCashDAOTemplate is BaseTemplate, TokenCache {
 
         TokenManager tokenManager = _installTokenManagerApp(dao, token, TOKEN_TRANSFERABLE, TOKEN_MAX_PER_ACCOUNT);
         _mintTokens(acl, tokenManager, _holders, _stakes);
-        _storeCache(dao, token, tokenManager);
+        _storeCache(dao, tokenManager);
     }
 
     function installAgreement(string _title, bytes _content, address _arbitrator, address _stakingFactory) external {
@@ -52,12 +52,21 @@ contract ANCashDAOTemplate is BaseTemplate, TokenCache {
         _storeCache(agreement);
     }
 
-    function installApps(address _votesCreator, uint64[7] _votingSettings, uint256[4] _collateralRequirements) external {
-        (Kernel dao, MiniMeToken token, TokenManager tokenManager, Agreement agreement) = _popCache();
-        (Finance finance, DisputableVoting voting) = _setupApps(dao, agreement, token, tokenManager, _votingSettings, _collateralRequirements);
+    function installApps(
+        address _submitter,
+        address _challenger,
+        MiniMeToken _votingToken,
+        uint64[7] _votingSettings,
+        uint256[4] _collateralRequirements
+    )
+        external
+    {
+        (Kernel dao, TokenManager tokenManager, Agreement agreement) = _popCache();
+        (Finance finance, DisputableVoting voting) = _setupApps(dao, agreement, tokenManager, _votingToken, _votingSettings, _collateralRequirements);
 
         ACL acl = ACL(dao.acl());
-        acl.createPermission(_votesCreator, voting, voting.CREATE_VOTES_ROLE(), voting);
+        acl.createPermission(_submitter, voting, voting.CREATE_VOTES_ROLE(), voting);
+        acl.createPermission(_challenger, voting, voting.CHALLENGE_ROLE(), voting);
 
         _transferRootPermissionsFromTemplateAndFinalizeDAO(dao, voting, voting);
     }
@@ -65,8 +74,8 @@ contract ANCashDAOTemplate is BaseTemplate, TokenCache {
     function _setupApps(
         Kernel _dao,
         Agreement _agreement,
-        MiniMeToken _token,
         TokenManager _tokenManager,
+        MiniMeToken _votingToken,
         uint64[7] _votingSettings,
         uint256[4] _collateralRequirements
     )
@@ -76,7 +85,7 @@ contract ANCashDAOTemplate is BaseTemplate, TokenCache {
         ACL acl = ACL(_dao.acl());
         Agent agent = _installAgentApp(_dao);
         Finance finance = _installFinanceApp(_dao, Vault(agent), DEFAULT_FINANCE_PERIOD);
-        DisputableVoting voting = _installDisputableVotingApp(_dao, _token, _votingSettings);
+        DisputableVoting voting = _installDisputableVotingApp(_dao, _votingToken, _votingSettings);
 
         _setupPermissions(acl, agent, _agreement, voting, finance, _tokenManager);
         _activateDisputableVoting(acl, _agreement, voting, _collateralRequirements);
@@ -120,11 +129,10 @@ contract ANCashDAOTemplate is BaseTemplate, TokenCache {
         _transferPermissionFromTemplate(_acl, _agreement, _voting, _agreement.MANAGE_DISPUTABLE_ROLE(), _voting);
     }
 
-    function _storeCache(Kernel _dao, MiniMeToken _token, TokenManager _tokenManager) internal {
+    function _storeCache(Kernel _dao, TokenManager _tokenManager) internal {
         Cache storage c = cache[msg.sender];
 
         c.dao = address(_dao);
-        c.token = address(_token);
         c.tokenManager = address(_tokenManager);
     }
 
@@ -139,17 +147,15 @@ contract ANCashDAOTemplate is BaseTemplate, TokenCache {
         return Kernel(c.dao);
     }
 
-    function _popCache() internal returns (Kernel dao, MiniMeToken token, TokenManager tokenManager, Agreement agreement) {
+    function _popCache() internal returns (Kernel dao, TokenManager tokenManager, Agreement agreement) {
         Cache storage c = cache[msg.sender];
-        require(c.dao != address(0) && c.token != address(0) && c.tokenManager != address(0), ERROR_MISSING_CACHE);
+        require(c.dao != address(0) && c.tokenManager != address(0), ERROR_MISSING_CACHE);
 
         dao = Kernel(c.dao);
-        token = MiniMeToken(c.token);
         tokenManager = TokenManager(c.tokenManager);
         agreement = Agreement(c.agreement);
 
         delete c.dao;
-        delete c.token;
         delete c.tokenManager;
         delete c.agreement;
     }
