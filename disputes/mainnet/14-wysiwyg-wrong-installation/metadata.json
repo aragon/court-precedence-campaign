@@ -1,13 +1,13 @@
 {
-  "voting": "0xa22ce823a0c0415f35ed95751c4aec14828b6414",
+  "voting": "0xa71e8defdab5bd14279df11303f7535b2c6a4d00",
   "submitterJustification": "./evidence/for.md",
   "challengerJustification": "./evidence/against.md",
   "script": {
-    "acl": "0x6a353a8e8200e95afbb95359b2d9705663a4bde2",
-    "kernel": "0x9fabbe2a534ca77e9bbff567beb91b324eea25de",
-    "vaultAddress": "0xb04d15863369a6be926a1f833eff9836f6f91ee5",
+    "acl": "0xb988c959c16e270e2ed868e4f32528bfc05a2067",
+    "kernel": "0xa23367a7f2a6efa4599ec7189fe653a0cf114c1e",
+    "vaultAddress": "0x6afa5f5920fcc8d041b515253c2dc42ba4e5e588",
     "appId": "0x3ca69801a60916e9222ceb2fa3089b3f66b4e1b3fc49f4a562043d9ec1e5a00b",
-    "appBase": "0x3e12147d1eb146866db34f04ff4043aa4d62b051",
+    "appBase": "0x282a131376add1a9f09940195447f4be1efdfa90",
     "role": "0x7941efc179bdce37ebd8db3e2deb46ce5280bf6d2de2e50938a9e920494c1941",
     "entity": "0x1111111111111111111111111111111111111111",
     "manager": "0x1111111111111111111111111111111111111111"
