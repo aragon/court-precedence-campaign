@@ -1,6 +1,6 @@
 The proposal Justification says:
 
-> Transfers control of the ancash.eth ENS name from one of our Agent addresses to our other AN Cash Agent address.
+> Transfers control of the `ancash.eth` ENS name from the AN Cash Agent address to `0xcafe1a77e84698c83ca8931f54a755176ef75f2c`.
 
 However the Aragon Network Cash dashboard shows shows:
 
