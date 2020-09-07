@@ -37,6 +37,12 @@ function encodeNewRewardsAppInstance(counterfactualAppAddress, vaultAddress, app
   return [newAppInstanceFunc, permissionsFunc]
 }
 
+function encodeUpgradeApp(appId, appBase) {
+  const baseAddressesNamespace = '0xf1f3eb40f5bc1ad1344716ced8b8a0431d840b5783aea1fd01786bc26f35ac0f'
+  const setAppAbi = getFunctionABI(KERNEL_ABI, 'setApp')
+  return abi.encodeFunctionCall(setAppAbi, [baseAddressesNamespace, appId, appBase])
+}
+
 function encodeNewImmediatePayment(token, receiver, amount, reference) {
   const newImmediatePaymentABI = getFunctionABI(FINANCE_ABI, 'newImmediatePayment')
   return abi.encodeFunctionCall(newImmediatePaymentABI, [token, receiver, amount, reference])
@@ -60,6 +66,7 @@ function getFunctionABI(ABI, functionName) {
 
 module.exports = {
   encodeForward,
+  encodeUpgradeApp,
   encodeCallsScript,
   encodeGrantPermission,
   encodeNewRewardsAppInstance,
